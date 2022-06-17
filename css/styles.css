@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'norse';
+    src: url('../fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('../fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: "Helvetica", "Arial", sans-serif;
+    background-color: #4B5D67;
+}
+
+.left-container {
+    background-image: url("../images/photo-1497250681960-ef046c08a56e.avif");
+    width: 30%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-container {
+    background-color: #AEDBCE;
+    width: 50%;
+
+}
+
+.title {
+    background-color: rgb(0,0,0,0.5);
+    width: 100%;
+    display: flex;
+    color: white;
+    padding: 20px;
+    font : 2.5rem "norse", monospace;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 200px;
+    gap: 10px;
+
+}
+
+.credit {
+    padding: 5px;
+    color: white;
+    opacity: 0.7;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.credit a {
+    color: white;
+}
+
+.logo {
+    display: inline-block;
+    width: 70px;
+}
+
+.title p {
+    margin-top: 30px;
+}
+
+.right-container > div {
+    margin-top: 100px;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.sign-up-form {
+    background-color: #FFE6E6;
+    border: 1px solid #D6D9DC;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+    margin: 0 0 40px 0;
+    margin-top: 30px;
+}
+.form-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 100px;
+    margin-left: 30px;
+}
+.single-field {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input{
+    border: 1px solid #AEDBCE;
+    border-radius: 3px;
+    padding: 7px;
+    font-size: 14px;
+    background-color: #FFE6E6;
+    width: 90%;
+}
+
+.form-row label {
+    margin-bottom: 15px;
+}
+
+  

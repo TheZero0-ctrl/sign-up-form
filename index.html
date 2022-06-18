@@ -27,41 +27,48 @@
             <div class="sign-up-form">
                 <div class="form-row">
                     <div class='single-field'>
-                        <label for='first-name'>First Name</label>
-                        <input id='first-name' name='first-name' type='text'/>
+                        <label for='first-name'>First Name *</label>
+                        <input id='first-name' name='first-name' type='text' required placeholder=" "/>
                     </div>
                     <div class='single-field'>
-                        <label for='last-name'>Last Name</label>
-                        <input id='last-name' name='last-name' type='text'/>
+                        <label for='last-name'>Last Name *</label>
+                        <input id='last-name' name='last-name' type='text' required placeholder=" "/>
                     </div>
                 </div>
     
                 <div class="form-row">
                     <div class='single-field'>
-                        <label for='email'> Email</label>
-                        <input id='email' name='email' type='email'/>
+                        <label for='email'> Email *</label>
+                        <input id='email' name='email' type='email' required placeholder=" "/>
                     </div>
                     <div class='single-field'>
                         <label for='ph-no'>Phone Number</label>
-                        <input id='ph-no' name='ph-no' type='tel'/>
+                        <input id='ph-no' name='ph-no' type='tel' placeholder=" "/>
                     </div>
                 </div>
     
                 <div class="form-row">
                     <div class='single-field'>
-                        <label for='Password'>Password</label>
-                        <input id='Password' name='Password' type='password'/>
+                        <label for='Password'>Password *</label>
+                        <input id='Password' name='Password' type='password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required placeholder=" "/>
+                        <p class="requirement">
+                            Your password must be at least 6 characters, uppercase, one lowercase, and one number.
+                        </p>
                     </div>
                     <div class='single-field'>
-                        <label for='con-pas'>Confirm Password</label>
-                        <input id='con-pas' name='con-pas' type='password'/>
+                        <label for='con-pas'>Confirm Password *</label>
+                        <input id='con-pas' name='con-pas' type='password' required placeholder=" "/>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="btn">
                 <button type="submit">Sign Up</button>
+            </div>
+            <div class="btn">
+                <p>Already have an account? <span><a href="#">Log In</a></span></p>
             </div>
         </form>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>

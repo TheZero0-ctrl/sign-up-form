@@ -33,7 +33,7 @@ body {
 .right-container {
     background-color: #AEDBCE;
     width: 50%;
-
+    height: 100vh;
 }
 
 .title {
@@ -86,16 +86,17 @@ body {
     padding: 50px;
     margin: 0 0 40px 0;
     margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .form-row{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 100px;
+    gap: 10px;
     margin-left: 30px;
 }
 .single-field {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -109,10 +110,88 @@ body {
     font-size: 14px;
     background-color: #FFE6E6;
     width: 90%;
+    padding-left: 20px;
 }
+
+.form-row input:invalid:not(:focus):not(:placeholder-shown) { border-color: red; }
 
 .form-row label {
     margin-bottom: 15px;
 }
 
+
+button {
+    font-size: 16px;
+    font-weight: bold;
   
+    color: #FFFFFF;
+    background-color: #5995DA;
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+}
+ .btn {
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 20
+    px;
+ }
+
+ button:hover {
+    background-color: #76AEED;;
+ }
+  
+.btn span a{
+    color: red;
+    text-decoration: none;
+}
+
+.btn span a:hover {
+    color: black;
+}
+
+@media only screen and (min-width:900px) {
+    .form-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 100px;
+        margin-left: 30px;
+    }
+}
+
+.error {
+    width  : 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  }
+  
+.error.active {
+    padding: 0.3em;
+  }
+
+form input:valid {
+    background: url("../images/check-mark.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+}
+
+
+
+.requirement {
+    margin-top: 5px;
+    color: #999;
+    max-height: 0;
+    transition: 0.28s;
+    font-style: italic;
+    width: 240px;
+}
+
